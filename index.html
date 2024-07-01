@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
        
@@ -31,7 +32,7 @@
         </header>
 
         <section class="home" id="home">
-            <div class="home-content">
+            <div class="home-content" data-aos="zoom-in">
 
                 <h3>Unleash Your</h3>
                 <h1>Power</h1>
@@ -42,7 +43,7 @@
 
             </div>
 
-            <div class="home-img">
+            <div class="home-img" data-aos="zoom-in">
                 <img src="Workout-PNG.png" height="900"  alt="Home Image">
             </div>
         </section>
@@ -272,4 +273,14 @@
         </p>
     </footer>
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
