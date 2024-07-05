@@ -147,7 +147,7 @@ header span {
     content: 'EASYFIT'; 
     position: absolute;
     top: 55%;
-    left: 30%;
+    left: 5%;
     transform: translateX(-50%);
     font-size: 18rem;
     font-weight: 400;

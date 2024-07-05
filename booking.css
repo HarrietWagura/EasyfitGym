@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('pics/loginbackground.jpg') no-repeat;
+}
+
+.contact {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgb(0, 6, 34);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.contact h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    width: 100%;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.input-box .field {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.field .item {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(0, 204, 255);
+    outline: none;
+    border-radius: 6px;
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: white;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: red;
+    margin: -1px 0 10px;
+    display: none;
+}
+.field select.item {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px 15px;
+}
+
+.field .item option {
+    background: #333;
+    color: white;
+}
+
+.textarea-field .item {
+    width: 170%;
+    height: 105%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(0, 204, 255);
+    outline: none;
+    border-radius: 6px;
+    color: white;
+}
+
+
+button {
+    padding: 15px 30px;
+    background: rgb(43, 216, 0);
+    border: none;
+    border-radius: 6px;
+    color: rgb(245, 245, 245);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgb(170, 0, 43);
+}
+
+#logout-button {
+    padding: 15px 30px;
+    background: rgb(216, 0, 0);
+    border: none;
+    border-radius: 6px;
+    color: rgb(245, 245, 245);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#logout-button:hover {
+    background: rgb(170, 0, 43);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+header span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    background: transparent;
+}
+
+.navbar a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+.nav-btn:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 18px var(--main-color);
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-right: left;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+

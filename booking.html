@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING FORM</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="pics/fitnesslogo.png"  width="100" height="60" class="d-inline-block align-top" alt="gym logo" loading="lazy">
+
+            <div class='bx bx-menu-alt-left' id="menu-icon"></div>
+
+            <ul class="navbar">
+                <a href="login.html"  style="color: red;">LOGOUT</a>
+
+
+        </header>
+
+
+    <section class="contact" >
+        <h2 style="color: red;">BOOK NOW</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+
+                </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Email Address" id="email"
+                        class="item" autocomplete="off">
+                        <div class="error-txt email">Email Address can't be blank</div>
+                    </div>
+                </div>
+
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone"
+                class="item" autocomplete="off">
+                <div class="error-txt">Phone Number can't be blank</div>
+
+            </div>
+                <div class="input-field field">
+                    <select id="plan" class="item">
+                        <option value="" disabled selected>Select Plan/Pricing</option>
+                        <option value="basic">Basic- KSH.4000</option>
+                        <option value="standard">Pro- KSH.7500</option>
+                        <option value="premium">Premium- KSH.10000</option>
+                        <div class="error-txt">Plan/Pricing can't be blank</div>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Starting Month" id="month"
+                        class="item" autocomplete="off">
+                        <div class="error-txt">Starting Month can't be blank</div>
+        
+                    </div>
+
+                <div class="input-field field">
+                    <select id="workout" class="item">
+                        <option value="" disabled selected>Select workout</option>
+                        <option value="physicalfitness">Physical Fitness- Mark</option>
+                        <option value="weightgain">Weight Gain- Brandon</option>
+                        <option value="strengthtraining">Strength Training- Anna</option>
+                        <option value="fatloss">Fat Loss - Valerie</option>
+                        <option value="weightlifting">Weight Lifting- Walter</option>
+                        <option value="boxing">Boxing- Allan</option>
+                        <div class="error-txt">Workout type can't be blank</div>
+                    </select>
+                </div>
+
+               
+
+        <div class="textarea-field field">
+          <textarea name="" id="message" cols="30" rows="10"
+          placeholder="Your Thoughts. Kindly specify the date to start" class="item" autocomplete="off"></textarea>
+          <div class="error-txt">Message can't be blank</div>
+        </div>
+
+        <button type="submit">Book</button>
+    </form>
+
+ </section>
+
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="booking.js"></script>
+</body>
+</html>
