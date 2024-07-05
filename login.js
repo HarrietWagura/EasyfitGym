@@ -1,9 +1,9 @@
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link'); // Fixed class name
+const registerLink = document.querySelector('.register-link');
 
 registerLink.addEventListener('click', () => {
-    wrapper.classList.add('active'); // Removed dot prefix
+    wrapper.classList.add('active'); 
 });
 
 loginLink.addEventListener('click', () => {
@@ -12,7 +12,7 @@ loginLink.addEventListener('click', () => {
 
 // Registration form submission event listener
 document.getElementById('register-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); 
 
     // Get form data
     const username = document.getElementById('register-username').value;
@@ -43,9 +43,8 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     .then(response => response.json())
     .then(data => {
         console.log('Registration response:', data); // Debug log
-        if (data.id) { // assuming json-server adds an id to the created user
+        if (data.id) { 
             alert('Registration successful! You can log in.');
-            // Redirect to booking.html after 2 seconds (simulated delay)
             setTimeout(() => {
                 window.location.href = 'login.html';
             }, 2000);
@@ -84,9 +83,8 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     .then(response => response.json())
     .then(data => {
         console.log('Login response:', data); // Debug log
-        if (data.id) { // assuming the server responds with an id for the logged-in user
+        if (data.id) { 
             alert('Login successful! Redirecting...');
-            // Redirect to booking.html after 2 seconds (simulated delay)
             setTimeout(() => {
                 window.location.href = 'index.html';
             }, 2000);
